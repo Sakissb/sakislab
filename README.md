@@ -40,5 +40,5 @@ GitHub Pages (για δωρεάν hosting)
 
 🚀 Live Demo
 Μπορείτε να δείτε την ιστοσελίδα live στην παρακάτω διεύθυνση:
-👉 https://sakis.github.io/sakislab/
+👉 https://sakissb.github.io/sakislab/
 © 2026 Sakis Lab. Developed with passion for Audio & Code.
