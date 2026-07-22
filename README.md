@@ -22,24 +22,25 @@
 ```text
 sakislab/
 ├── index.html              <-- Το κύριο αρχείο της ιστοσελίδας
-├── assets/                 <-- Φάκελος για όλα τα πολυμέσα & αρχεία
-│   ├── audio/              <-- 🎧 ΜΟΥΣΙΚΗ ΧΩΡΙΣΜΕΝΗ ΣΕ ALBUMS
-│   │   ├── album-1/
-│   │   │   ├── cover.jpg   <-- Εξώφυλλο Album 1
-│   │   │   ├── track1.mp3
-│   │   │   └── track2.mp3
-│   │   └── album-2/
-│   │       ├── cover.jpg   <-- Εξώφυλλο Album 2
-│   │       ├── track1.mp3
-│   │       └── track2.mp3
-│   ├── downloads/          <-- ZIP / EXE / Python προγράμματα
-│   │   └── my-app.zip
-│   ├── documents/          <-- PDFs, Docs, Manuals
-│   │   └── guide.pdf
-│   └── images/             <-- Λογότυπα & Εικόνες site
-│       ├── favicon.png     <-- 🖼️ ΝΕΟ ΕΙΚΟΝΙΔΙΟ ΙΣΤΟΣΕΛΙΔΑΣ
-│       └── logo.png
-└── README.md
+├── README.md               <-- Πληροφορίες & οδηγίες του project
+└── assets/                 <-- Φάκελος για όλα τα πολυμέσα & αρχεία
+    ├── audio/              # 🎧 Μουσική χωρισμένη σε Albums
+    │   ├── album-1/
+    │   │   ├── cover.jpg   # Εξώφυλλο Album 1
+    │   │   ├── track1.mp3
+    │   │   └── track2.mp3
+    │   └── album-2/
+    │       ├── cover.jpg   # Εξώφυλλο Album 2
+    │       ├── track1.mp3
+    │       └── track2.mp3
+    ├── downloads/          # 💻 Προγράμματα (.zip, .exe, scripts)
+    │   └── my-app.zip
+    ├── documents/          # 📄 Έγγραφα & Οδηγοί
+    │   └── guides/
+    │       └── my-guide.pdf
+    └── images/             # 🖼️ Εικόνες & Logos
+        ├── favicon.png     # Εικονίδιο για την καρτέλα του browser
+        └── logo.png        # Λογότυπο
 ```
 
 🛠️ Τεχνολογίες που χρησιμοποιήθηκαν
