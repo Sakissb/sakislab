@@ -21,15 +21,25 @@
 
 ```text
 sakislab/
-├── index.html              # Η κύρια ιστοσελίδα
-├── README.md               # Πληροφορίες του project
-└── assets/                 # Φάκελος πολυμέσων & αρχείων
-    ├── audio/              # Μουσικά άλμπουμ & MP3s
-    │   ├── album-1/
-    │   └── album-2/
-    ├── downloads/          # Προγράμματα (.zip, .exe)
-    ├── documents/          # Έγγραφα (.pdf, .docx)
-    └── images/             # Εικόνες & Favicon
+├── index.html              <-- Το κύριο αρχείο της ιστοσελίδας
+├── assets/                 <-- Φάκελος για όλα τα πολυμέσα & αρχεία
+│   ├── audio/              <-- 🎧 ΜΟΥΣΙΚΗ ΧΩΡΙΣΜΕΝΗ ΣΕ ALBUMS
+│   │   ├── album-1/
+│   │   │   ├── cover.jpg   <-- Εξώφυλλο Album 1
+│   │   │   ├── track1.mp3
+│   │   │   └── track2.mp3
+│   │   └── album-2/
+│   │       ├── cover.jpg   <-- Εξώφυλλο Album 2
+│   │       ├── track1.mp3
+│   │       └── track2.mp3
+│   ├── downloads/          <-- ZIP / EXE / Python προγράμματα
+│   │   └── my-app.zip
+│   ├── documents/          <-- PDFs, Docs, Manuals
+│   │   └── guide.pdf
+│   └── images/             <-- Λογότυπα & Εικόνες site
+│       ├── favicon.png     <-- 🖼️ ΝΕΟ ΕΙΚΟΝΙΔΙΟ ΙΣΤΟΣΕΛΙΔΑΣ
+│       └── logo.png
+└── README.md
 ```
 
 🛠️ Τεχνολογίες που χρησιμοποιήθηκαν
