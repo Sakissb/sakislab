@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="el">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakis Lab | Music, Code & Digital Experiments</title>
-    
+    <title>Sakis Lab | Music, Code & Digital Assets</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/Icon_00002_.png">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -18,18 +19,35 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
+        /* Κίνηση Χρωμάτων (Gradient Flow Animation) */
+        @keyframes textGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .animate-gradient-text {
+            background-size: 200% auto;
+            animation: textGradient 4s ease infinite;
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col selection:bg-purple-500 selection:text-white">
+
+<body
+    class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col selection:bg-purple-500 selection:text-white">
 
     <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 glass border-b border-slate-800/80 bg-slate-950/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Animated Brand Logo -->
             <a href="#" class="flex flex-col group">
-                <span class="text-2xl font-black tracking-wider bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 bg-clip-text text-transparent">
+                <span class="text-2xl font-black tracking-wider bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 bg-clip-text text-transparent animate-gradient-text transform group-hover:scale-105 transition-all duration-300">
                     SAKIS <span class="text-white font-light group-hover:text-purple-400 transition">LAB</span>
                 </span>
-                <span class="text-[10px] tracking-widest text-slate-400 uppercase">Where Sound Meets Code</span>
+                <span class="text-[10px] tracking-widest text-slate-400 uppercase group-hover:tracking-wider transition-all duration-300">
+                    Where Sound Meets Code
+                </span>
             </a>
 
             <nav class="space-x-6 hidden md:flex font-medium text-sm">
@@ -54,13 +72,17 @@
 
     <!-- Hero Section -->
     <section class="max-w-7xl mx-auto px-6 py-20 text-center relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -z-10 pointer-events-none">
+        </div>
 
         <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
-            Μουσική, Κώδικας & <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Digital Assets</span>
+            Μουσική, Κώδικας & <span
+                class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Digital Assets</span>
         </h2>
         <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Καλώς ήρθατε στο προσωπικό μου digital lab. Εδώ θα βρείτε τα μουσικά μου άλμπουμ, εφαρμογές, συμβουλές πληροφορικής και ψηφιακά εγχειρήματα.
+            Καλώς ήρθατε στο προσωπικό μου digital lab. Εδώ θα βρείτε άλμπουμ με τη μουσική μου, εφαρμογές, συμβουλές
+            πληροφορικής και ψηφιακά εγχειρήματα.
         </p>
     </section>
 
@@ -73,15 +95,19 @@
                 <i class="fa-solid fa-record-vinyl text-2xl text-purple-400"></i>
                 <h3 class="text-2xl font-bold">Albums & Discography</h3>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-8">
-                
+
                 <!-- ALBUM 1 -->
                 <div class="glass p-6 rounded-2xl space-y-6 hover:border-purple-500/40 transition">
                     <div class="flex flex-col sm:flex-row items-center gap-6">
-                        <img src="assets/audio/album-1/cover.jpg" alt="Album Cover" class="w-32 h-32 rounded-xl object-cover border border-slate-700 bg-slate-800 shrink-0" onerror="this.src='https://via.placeholder.com/150/2e1065/ffffff?text=Album+1'">
+                        <img src="assets/audio/album-1/cover.jpg" alt="Album Cover"
+                            class="w-32 h-32 rounded-xl object-cover border border-slate-700 bg-slate-800 shrink-0"
+                            onerror="this.src='https://via.placeholder.com/150/2e1065/ffffff?text=Album+1'">
                         <div class="text-center sm:text-left space-y-1">
-                            <span class="text-xs font-semibold px-2.5 py-0.5 bg-purple-500/20 text-purple-300 rounded-full">Album • 2026</span>
+                            <span
+                                class="text-xs font-semibold px-2.5 py-0.5 bg-purple-500/20 text-purple-300 rounded-full">Album
+                                • 2026</span>
                             <h4 class="font-bold text-2xl text-white">Neon Horizons</h4>
                             <p class="text-sm text-slate-400">Synthwave / Electronic</p>
                         </div>
@@ -110,9 +136,13 @@
                 <!-- ALBUM 2 -->
                 <div class="glass p-6 rounded-2xl space-y-6 hover:border-pink-500/40 transition">
                     <div class="flex flex-col sm:flex-row items-center gap-6">
-                        <img src="assets/audio/album-2/cover.jpg" alt="Album Cover" class="w-32 h-32 rounded-xl object-cover border border-slate-700 bg-slate-800 shrink-0" onerror="this.src='https://via.placeholder.com/150/831843/ffffff?text=Album+2'">
+                        <img src="assets/audio/album-2/cover.jpg" alt="Album Cover"
+                            class="w-32 h-32 rounded-xl object-cover border border-slate-700 bg-slate-800 shrink-0"
+                            onerror="this.src='https://via.placeholder.com/150/831843/ffffff?text=Album+2'">
                         <div class="text-center sm:text-left space-y-1">
-                            <span class="text-xs font-semibold px-2.5 py-0.5 bg-pink-500/20 text-pink-300 rounded-full">EP • 2026</span>
+                            <span
+                                class="text-xs font-semibold px-2.5 py-0.5 bg-pink-500/20 text-pink-300 rounded-full">EP
+                                • 2026</span>
                             <h4 class="font-bold text-2xl text-white">Acoustic Sessions</h4>
                             <p class="text-sm text-slate-400">Ambient / Instrumental</p>
                         </div>
@@ -149,51 +179,63 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-purple-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-purple-500/50 transition">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-xs px-2.5 py-1 bg-purple-500/20 text-purple-300 font-semibold rounded-full border border-purple-500/30">Python</span>
+                            <span
+                                class="text-xs px-2.5 py-1 bg-purple-500/20 text-purple-300 font-semibold rounded-full border border-purple-500/30">Python</span>
                             <i class="fa-brands fa-github text-slate-400 text-lg"></i>
                         </div>
                         <h4 class="font-bold text-xl mb-2">Audio Converter Bot</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Ένα εργαλείο σε Python για αυτόματη μετατροπή και συμπίεση αρχείων ήχου.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">Ένα εργαλείο σε Python για αυτόματη μετατροπή
+                            και συμπίεση αρχείων ήχου.</p>
                     </div>
-                    <a href="assets/downloads/my-app.zip" download class="inline-flex items-center text-sm font-semibold text-purple-400 hover:text-purple-300 transition pt-4">
+                    <a href="assets/downloads/my-app.zip" download
+                        class="inline-flex items-center text-sm font-semibold text-purple-400 hover:text-purple-300 transition pt-4">
                         <i class="fa-solid fa-download mr-2"></i> Download (.zip)
                     </a>
                 </div>
 
-                <div class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-pink-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-pink-500/50 transition">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-xs px-2.5 py-1 bg-pink-500/20 text-pink-300 font-semibold rounded-full border border-pink-500/30">JavaScript</span>
+                            <span
+                                class="text-xs px-2.5 py-1 bg-pink-500/20 text-pink-300 font-semibold rounded-full border border-pink-500/30">JavaScript</span>
                             <i class="fa-brands fa-github text-slate-400 text-lg"></i>
                         </div>
                         <h4 class="font-bold text-xl mb-2">Web DJ Station</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Browser-based mixer για real-time αναπαραγωγή και mixing των tracks σου.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">Browser-based mixer για real-time αναπαραγωγή
+                            και mixing των tracks σου.</p>
                     </div>
-                    <a href="#" class="inline-flex items-center text-sm font-semibold text-pink-400 hover:text-pink-300 transition pt-4">
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-semibold text-pink-400 hover:text-pink-300 transition pt-4">
                         Live Demo <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-indigo-500/50 transition">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-xs px-2.5 py-1 bg-indigo-500/20 text-indigo-300 font-semibold rounded-full border border-indigo-500/30">Tools</span>
+                            <span
+                                class="text-xs px-2.5 py-1 bg-indigo-500/20 text-indigo-300 font-semibold rounded-full border border-indigo-500/30">Tools</span>
                             <i class="fa-solid fa-folder-open text-slate-400 text-lg"></i>
                         </div>
                         <h4 class="font-bold text-xl mb-2">Custom Utilities</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Διάφορα βοηθητικά scripts, configurations και ψηφιακά αρχεία.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">Διάφορα βοηθητικά scripts, configurations και
+                            ψηφιακά αρχεία.</p>
                     </div>
-                    <a href="assets/downloads/utility-tools.zip" download class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition pt-4">
+                    <a href="assets/downloads/utility-tools.zip" download
+                        class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition pt-4">
                         <i class="fa-solid fa-download mr-2"></i> Download Files
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Tech Tips & Guides Section (ΝΕΑ ΕΝΟΤΗΤΑ) -->
+        <!-- Tech Tips & Guides Section -->
         <section id="tips" class="space-y-6 scroll-mt-24">
             <div class="flex items-center space-x-3 border-b border-slate-800 pb-4">
                 <i class="fa-solid fa-lightbulb text-2xl text-emerald-400"></i>
@@ -202,51 +244,67 @@
 
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Tip 1 -->
-                <div class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
-                            <span class="text-xs px-2.5 py-1 bg-emerald-500/20 text-emerald-300 font-semibold rounded-full border border-emerald-500/30">Security</span>
-                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> 2 min read</span>
+                            <span
+                                class="text-xs px-2.5 py-1 bg-emerald-500/20 text-emerald-300 font-semibold rounded-full border border-emerald-500/30">Security</span>
+                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> 2 min
+                                read</span>
                         </div>
                         <h4 class="font-bold text-xl text-white">Ασφάλεια Κωδικών & SSH Keys</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Γιατί δεν πρέπει να χρησιμοποιείς απλούς κωδικούς στους servers σου και πώς να ρυθμίσεις SSH Keys για μέγιστη ασφάλεια.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">Γιατί δεν πρέπει να χρησιμοποιείς απλούς
+                            κωδικούς στους servers σου και πώς να ρυθμίσεις SSH Keys για μέγιστη ασφάλεια.</p>
                     </div>
                     <div class="pt-4 border-t border-slate-800/60">
-                        <span class="text-xs font-mono text-emerald-400 bg-slate-900 px-3 py-1.5 rounded-lg block overflow-x-auto">
+                        <span
+                            class="text-xs font-mono text-emerald-400 bg-slate-900 px-3 py-1.5 rounded-lg block overflow-x-auto">
                             ssh-keygen -t ed25519 -C "your_email"
                         </span>
                     </div>
                 </div>
 
                 <!-- Tip 2 -->
-                <div class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
-                            <span class="text-xs px-2.5 py-1 bg-blue-500/20 text-blue-300 font-semibold rounded-full border border-blue-500/30">Linux</span>
-                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> 3 min read</span>
+                            <span
+                                class="text-xs px-2.5 py-1 bg-blue-500/20 text-blue-300 font-semibold rounded-full border border-blue-500/30">Linux</span>
+                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> 3 min
+                                read</span>
                         </div>
                         <h4 class="font-bold text-xl text-white">Βασικές Εντολές Linux Terminal</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Τα πιο χρήσιμα command-line tools (htop, rsync, chmod) που αυξάνουν την παραγωγικότητα κάθε developer.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">Τα πιο χρήσιμα command-line tools (htop,
+                            rsync, chmod) που αυξάνουν την παραγωγικότητα κάθε developer.</p>
                     </div>
                     <div class="pt-4 border-t border-slate-800/60">
-                        <span class="text-xs font-mono text-blue-400 bg-slate-900 px-3 py-1.5 rounded-lg block overflow-x-auto">
+                        <span
+                            class="text-xs font-mono text-blue-400 bg-slate-900 px-3 py-1.5 rounded-lg block overflow-x-auto">
                             chmod +x script.sh
                         </span>
                     </div>
                 </div>
 
                 <!-- Tip 3 -->
-                <div class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
-                            <span class="text-xs px-2.5 py-1 bg-purple-500/20 text-purple-300 font-semibold rounded-full border border-purple-500/30">Audio & Tech</span>
-                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> 4 min read</span>
+                            <span
+                                class="text-xs px-2.5 py-1 bg-purple-500/20 text-purple-300 font-semibold rounded-full border border-purple-500/30">Audio
+                                & Tech</span>
+                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> 4 min
+                                read</span>
                         </div>
                         <h4 class="font-bold text-xl text-white">FFmpeg: Ο Βασιλιάς της Μετατροπής Ήχου</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Πώς να μετατρέψεις μαζικά αρχεία WAV σε MP3 320kbps χωρίς να χάσεις ποιότητα χρησιμοποιώντας μόνο το τερματικό.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">Πώς να μετατρέψεις μαζικά αρχεία WAV σε MP3
+                            320kbps χωρίς να χάσεις ποιότητα χρησιμοποιώντας μόνο το τερματικό.</p>
                     </div>
                     <div class="pt-4 border-t border-slate-800/60">
-                        <span class="text-xs font-mono text-purple-400 bg-slate-900 px-3 py-1.5 rounded-lg block overflow-x-auto">
+                        <span
+                            class="text-xs font-mono text-purple-400 bg-slate-900 px-3 py-1.5 rounded-lg block overflow-x-auto">
                             ffmpeg -i input.wav -b:a 320k output.mp3
                         </span>
                     </div>
@@ -262,9 +320,11 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="glass p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-amber-500/20 border border-amber-500/30 rounded-xl flex items-center justify-center text-amber-400 shrink-0">
+                        <div
+                            class="w-12 h-12 bg-amber-500/20 border border-amber-500/30 rounded-xl flex items-center justify-center text-amber-400 shrink-0">
                             <i class="fa-solid fa-file-lines text-2xl"></i>
                         </div>
                         <div>
@@ -273,18 +333,22 @@
                         </div>
                     </div>
                     <div class="flex space-x-3">
-                        <a href="assets/documents/guide.pdf" target="_blank" class="p-2 text-slate-400 hover:text-amber-400 transition" title="Προβολή">
+                        <a href="assets/documents/guides/my-guide.pdf" target="_blank"
+                            class="p-2 text-slate-400 hover:text-amber-400 transition" title="Προβολή">
                             <i class="fa-solid fa-eye text-lg"></i>
                         </a>
-                        <a href="assets/documents/guide.pdf" download class="p-2 text-slate-400 hover:text-amber-400 transition" title="Κατέβασμα">
+                        <a href="assets/documents/guides/my-guide.pdf" download
+                            class="p-2 text-slate-400 hover:text-amber-400 transition" title="Κατέβασμα">
                             <i class="fa-solid fa-download text-lg"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="glass p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
+                <div
+                    class="glass p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-amber-500/20 border border-amber-500/30 rounded-xl flex items-center justify-center text-amber-400 shrink-0">
+                        <div
+                            class="w-12 h-12 bg-amber-500/20 border border-amber-500/30 rounded-xl flex items-center justify-center text-amber-400 shrink-0">
                             <i class="fa-solid fa-music text-2xl"></i>
                         </div>
                         <div>
@@ -293,10 +357,12 @@
                         </div>
                     </div>
                     <div class="flex space-x-3">
-                        <a href="assets/documents/music-cheatsheet.pdf" target="_blank" class="p-2 text-slate-400 hover:text-amber-400 transition" title="Προβολή">
+                        <a href="assets/documents/music-cheatsheet.pdf" target="_blank"
+                            class="p-2 text-slate-400 hover:text-amber-400 transition" title="Προβολή">
                             <i class="fa-solid fa-eye text-lg"></i>
                         </a>
-                        <a href="assets/documents/music-cheatsheet.pdf" download class="p-2 text-slate-400 hover:text-amber-400 transition" title="Κατέβασμα">
+                        <a href="assets/documents/music-cheatsheet.pdf" download
+                            class="p-2 text-slate-400 hover:text-amber-400 transition" title="Κατέβασμα">
                             <i class="fa-solid fa-download text-lg"></i>
                         </a>
                     </div>
@@ -311,9 +377,11 @@
                 <h3 class="text-2xl font-bold">Upload Center</h3>
             </div>
 
-            <div class="glass p-10 rounded-2xl border-dashed border-2 border-slate-700/80 text-center relative hover:border-purple-500/80 transition cursor-pointer group" id="drop-zone">
+            <div class="glass p-10 rounded-2xl border-dashed border-2 border-slate-700/80 text-center relative hover:border-purple-500/80 transition cursor-pointer group"
+                id="drop-zone">
                 <input type="file" id="file-input" class="hidden" multiple />
-                <i class="fa-solid fa-file-circle-plus text-5xl text-slate-500 group-hover:text-purple-400 transition mb-4"></i>
+                <i
+                    class="fa-solid fa-file-circle-plus text-5xl text-slate-500 group-hover:text-purple-400 transition mb-4"></i>
                 <p class="text-lg font-medium mb-1">Σύρετε αρχεία εδώ ή κάντε κλικ για επιλογή</p>
                 <p class="text-xs text-slate-500">Υποστηρίζονται: MP3, WAV, ZIP, EXE, PDF, DOCX</p>
             </div>
@@ -363,3 +431,5 @@
         }
     </script>
 </body>
+
+</html>
